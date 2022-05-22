@@ -1,0 +1,11 @@
+body {
+    margin: auto;
+    font-family: garamond, serif;
+    text-align: center;
+    font-size: large;
+    list-style-type: none;
+}
+ul{
+	list-style: none;
+    text-align: left;
+}

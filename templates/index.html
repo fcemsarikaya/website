@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block nav %}
+<body style="background-color:aquamarine;">
+<div id="2am">
+    <a href="/about">about me</a>
+</div>
+{% endblock %}
+
+{% block title %}
+homepage
+{% endblock %}
+
+{% block body %}
+    <p>where i share some of my repositories</p>
+    <p>-{{person}}</p>
+<br>
+<br>
+{% for repo in list %}
+    <h3>
+       <a href="/{{repo}}">{{repo}}</a>
+    </h3>
+<br>
+{% endfor %}
+{% endblock %}

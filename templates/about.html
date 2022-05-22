@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block nav %}
+<body style="background-color:pink;">
+<div id="b2h">
+    <a href="/">home</a>
+</div>
+{% endblock %}
+
+{% block title %}
+    about me
+{% endblock %}
+
+{% block body %}
+<br>
+<br>
+    hello all. my name is fidel. i'm a software & information engineering student at vienna university of technology.
+<br>
+<br>
+    for more from me, you can check the following links.
+<br>
+<br>
+    <div id="links">
+        <br>
+        <a href="https://www.linkedin.com/in/fidel-cem-sar%C4%B1kaya-62305321b/">linkedin</a>
+        <br>
+        <a href="https://twitter.com/fcemsarikaya/">twitter</a>
+    </div>
+<br>
+<br>
+<img src="{{url_for('static', filename='img.jpg')}}"/>
+{% endblock %}
